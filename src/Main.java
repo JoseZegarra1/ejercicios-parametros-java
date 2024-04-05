@@ -1,5 +1,6 @@
 import ParametrosEnteros.*;
 import ParametrosBooleanos.*;
+import ParametrosTexto.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +34,21 @@ public class Main {
 
         EjercicioMetodo5PB metodo5PB = new EjercicioMetodo5PB();
         System.out.println("¿Es verdadero?: " + metodo5PB.esVerdadero(true));
+
+        EjercicioMetodo1PT metodo1PT = new EjercicioMetodo1PT();
+        System.out.println("Concatenación: " + metodo1PT.concatenar("Hola ", "mundo"));
+
+        EjercicioMetodo2PT metodo2PT = new EjercicioMetodo2PT();
+        System.out.println("Longitud: " + metodo2PT.longitud("OpenAI"));
+
+        EjercicioMetodo3PT metodo3PT = new EjercicioMetodo3PT();
+        System.out.println("Mayúsculas: " + metodo3PT.aMayusculas("java"));
+
+        EjercicioMetodo4PT metodo4PT = new EjercicioMetodo4PT();
+        System.out.println("¿Contiene subcadena?: " + metodo4PT.contieneSubcadena("Hola mundo", "mundo"));
+
+        EjercicioMetodo5PT metodo5PT = new EjercicioMetodo5PT();
+        System.out.println("Número de palabras: " + metodo5PT.contarPalabras("Esta es una cadena de texto"));
 
     }
 }
